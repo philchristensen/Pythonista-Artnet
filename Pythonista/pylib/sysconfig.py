@@ -187,27 +187,29 @@ def customize_compiler(compiler):
 
 def get_config_h_filename():
     """Return full pathname of installed pyconfig.h file."""
-    if python_build:
-        if os.name == "nt":
-            inc_dir = os.path.join(project_base, "PC")
-        else:
-            inc_dir = project_base
-    else:
-        inc_dir = get_python_inc(plat_specific=1)
-    if get_python_version() < '2.2':
-        config_h = 'config.h'
-    else:
-        # The name of the config.h file changed in 2.2
-        config_h = 'pyconfig.h'
-    return os.path.join(inc_dir, config_h)
+    return  os.path.join(os.path.dirname(os.getcwd()), "TouchlightDMX.app/pylib/config/pyconfig.h")
+    # if python_build:
+    #     if os.name == "nt":
+    #         inc_dir = os.path.join(project_base, "PC")
+    #     else:
+    #         inc_dir = project_base
+    # else:
+    #     inc_dir = get_python_inc(plat_specific=1)
+    # if get_python_version() < '2.2':
+    #     config_h = 'config.h'
+    # else:
+    #     # The name of the config.h file changed in 2.2
+    #     config_h = 'pyconfig.h'
+    # return os.path.join(inc_dir, config_h)
 
 
 def get_makefile_filename():
     """Return full pathname of installed Makefile from the Python build."""
-    if python_build:
-        return os.path.join(os.path.dirname(sys.executable), "Makefile")
-    lib_dir = get_python_lib(plat_specific=1, standard_lib=1)
-    return os.path.join(lib_dir, "config", "Makefile")
+    return  os.path.join(os.path.dirname(os.getcwd()), "TouchlightDMX.app/pylib/config/Makefile")
+    # if python_build:
+    #     return os.path.join(os.path.dirname(sys.executable), "Makefile")
+    # lib_dir = get_python_lib(plat_specific=1, standard_lib=1)
+    # return os.path.join(lib_dir, "config", "Makefile")
 
 
 def parse_config_h(fp, g=None):
