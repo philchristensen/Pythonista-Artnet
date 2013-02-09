@@ -598,7 +598,7 @@
 			attributes = {
 				LastUpgradeCheck = 0440;
 			};
-			buildConfigurationList = 7F68639915CE0275001A62F6 /* Build configuration list for PBXProject "Project" */;
+			buildConfigurationList = 7F68639915CE0275001A62F6 /* Build configuration list for PBXProject "TouchlightDMX" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -838,7 +838,7 @@
 					"-w",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "2";
+				TARGETED_DEVICE_FAMILY = 2;
 				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/usr/local/include";
 				WRAPPER_EXTENSION = app;
 			};
@@ -865,7 +865,7 @@
 					"-w",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "2";
+				TARGETED_DEVICE_FAMILY = 2;
 				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/usr/local/include";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
@@ -875,7 +875,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7F68639915CE0275001A62F6 /* Build configuration list for PBXProject "Project" */ = {
+		7F68639915CE0275001A62F6 /* Build configuration list for PBXProject "TouchlightDMX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7F6863B815CE0275001A62F6 /* Debug */,
