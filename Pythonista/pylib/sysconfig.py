@@ -187,7 +187,7 @@ def customize_compiler(compiler):
 
 def get_config_h_filename():
     """Return full pathname of installed pyconfig.h file."""
-    return  os.path.join(os.path.dirname(os.getcwd()), "TouchlightDMX.app/pylib/config/pyconfig.h")
+    return  os.path.join(os.path.dirname(__file__), "config/pyconfig.h")
     # if python_build:
     #     if os.name == "nt":
     #         inc_dir = os.path.join(project_base, "PC")
@@ -205,7 +205,7 @@ def get_config_h_filename():
 
 def get_makefile_filename():
     """Return full pathname of installed Makefile from the Python build."""
-    return  os.path.join(os.path.dirname(os.getcwd()), "TouchlightDMX.app/pylib/config/Makefile")
+    return  os.path.join(os.path.dirname(__file__), "config/Makefile")
     # if python_build:
     #     return os.path.join(os.path.dirname(sys.executable), "Makefile")
     # lib_dir = get_python_lib(plat_specific=1, standard_lib=1)

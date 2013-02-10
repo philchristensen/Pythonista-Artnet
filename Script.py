@@ -1,41 +1,24 @@
 import logging
-
-#import GitHubLoader as loader
+import os.path
 
 logging.basicConfig(level=logging.INFO)
 
-log = logging.getLogger('dmxista')
+log = logging.getLogger('touchlight')
 
 def main():
-    try:
-        from distribute_setup import use_setuptools
-        use_setuptools()
-        import cement
-        print repr(cement)
-    except:
-        import traceback
-        traceback.print_exc()
+	try:
+		import site
+		for dir in site.getsitepackages():
+			if not(os.path.exists(dir)):
+				os.makedirs(dir)
 
-#	path = loader.get_latest(
-#		username = 'philchristensen',
-#		reponame = 'python-artnet',
-#		path = 'src',
-#	)
-#	if(path not in sys.path):
-#		log.info('Added python-artnet to Python path.')
-#		sys.path.append(path)
-#	
-#	path = loader.get_latest(
-#		username = 'philchristensen',
-#		reponame = 'dmxista',
-#	)
-#	if(path not in sys.path):
-#		log.info('Added dmxista to Python path.')
-#		sys.path.append(path)
-#	
-#	from dmxista import app
-#	app.main()
-
+		from distribute_setup import use_setuptools
+		use_setuptools()
+		import cement
+		log.info(repr(cement))
+	except:
+		import traceback
+		traceback.print_exc()
 
 if(__name__ == '__main__'):
 	main()
