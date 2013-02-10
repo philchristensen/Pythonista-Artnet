@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4AE33CEF16C821DA00E8C3BF /* cement in Resources */ = {isa = PBXBuildFile; fileRef = 4AE33CED16C8213E00E8C3BF /* cement */; };
 		7F07508215DEAC2100F7D8BD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F07507F15DEAC1700F7D8BD /* Security.framework */; };
 		7F0BC8CD15DF30BC00CF6907 /* canvas.py in Resources */ = {isa = PBXBuildFile; fileRef = 7F0BC8CC15DF30BC00CF6907 /* canvas.py */; };
 		7F14BB2E15CEEB57001CCF18 /* libpythonista2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F6863BD15CE02A7001A62F6 /* libpythonista2.a */; };
@@ -158,7 +157,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4AE33CED16C8213E00E8C3BF /* cement */ = {isa = PBXFileReference; lastKnownFileType = folder; name = cement; path = python/cement; sourceTree = "<group>"; };
 		7F07507F15DEAC1700F7D8BD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		7F0BC8CC15DF30BC00CF6907 /* canvas.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; name = canvas.py; path = python/canvas.py; sourceTree = "<group>"; };
 		7F14BB2F15CEF099001CCF18 /* Icon72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon72.png; sourceTree = "<group>"; };
@@ -562,7 +560,6 @@
 		7FE0E0A115CE136300B1161E /* Python */ = {
 			isa = PBXGroup;
 			children = (
-				4AE33CED16C8213E00E8C3BF /* cement */,
 				7FE0DF2A15CE099D00B1161E /* pylib */,
 				7F9F72BB15CEF4B500C4292E /* _scene_types.py */,
 				7F9F72BC15CEF4B500C4292E /* captureoutput.py */,
@@ -721,7 +718,6 @@
 				7F9F72BE15CEF4B500C4292E /* _scene_types.py in Resources */,
 				7F9F72BF15CEF4B500C4292E /* captureoutput.py in Resources */,
 				7F9F72C015CEF4B500C4292E /* scene.py in Resources */,
-				4AE33CEF16C821DA00E8C3BF /* cement in Resources */,
 				7FA7D0B915D1520E0068A0F9 /* kb-loupe-hi.png in Resources */,
 				7FA7D0BA15D1520E0068A0F9 /* kb-loupe-hi@2x.png in Resources */,
 				7FA7D0BB15D1520E0068A0F9 /* kb-loupe-lo.png in Resources */,
