@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A6B480C16CD8F5B00FC86AD /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A6B480B16CD8F5B00FC86AD /* Storyboard.storyboard */; };
 		7F07508215DEAC2100F7D8BD /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F07507F15DEAC1700F7D8BD /* Security.framework */; };
 		7F0BC8CD15DF30BC00CF6907 /* canvas.py in Resources */ = {isa = PBXBuildFile; fileRef = 7F0BC8CC15DF30BC00CF6907 /* canvas.py */; };
 		7F14BB2E15CEEB57001CCF18 /* libpythonista2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F6863BD15CE02A7001A62F6 /* libpythonista2.a */; };
@@ -157,6 +158,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A6B480B16CD8F5B00FC86AD /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		7F07507F15DEAC1700F7D8BD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		7F0BC8CC15DF30BC00CF6907 /* canvas.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; name = canvas.py; path = python/canvas.py; sourceTree = "<group>"; };
 		7F14BB2F15CEF099001CCF18 /* Icon72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon72.png; sourceTree = "<group>"; };
@@ -365,6 +367,7 @@
 		7F68639415CE0275001A62F6 = {
 			isa = PBXGroup;
 			children = (
+				4A6B480B16CD8F5B00FC86AD /* Storyboard.storyboard */,
 				7FE0DFEF15CE0C3200B1161E /* Script.py */,
 				7F6863AD15CE0275001A62F6 /* Info.plist */,
 				7F6863B115CE0275001A62F6 /* Classes */,
@@ -750,6 +753,7 @@
 				7F19258615E9BF410026C9D4 /* LightBarOpaque.png in Resources */,
 				7F19258715E9BF410026C9D4 /* LightBarOpaque@2x.png in Resources */,
 				7FFD60C81634D20800AFEC18 /* Default-568h@2x.png in Resources */,
+				4A6B480C16CD8F5B00FC86AD /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

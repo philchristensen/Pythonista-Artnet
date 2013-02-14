@@ -16,7 +16,7 @@
 	[[NSUserDefaults standardUserDefaults] setBool:YES forKey:kSettingScene32BitColors];
 	[[NSUserDefaults standardUserDefaults] setBool:NO forKey:kSettingSceneAntialiasing];
 		
-	_window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+	_window = self.window;
 	
 	NSString *bundledScriptPath = [[NSBundle mainBundle] pathForResource:@"Script" ofType:@"py"];
 	NSString *docPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
@@ -31,9 +31,30 @@
 	}
 	
 	_viewController = self.viewController = [[[PythonistaAppViewController alloc] initWithScriptPath:targetPath backgroundColor:[UIColor colorWithWhite:0.2 alpha:1.0] textColor:[UIColor colorWithWhite:0.9 alpha:1.0]] autorelease];
-	_window.rootViewController = _viewController;
-	[_window makeKeyAndVisible];
+    
+//    UIButton *infoButton = [UIButton buttonWithType:UIButtonTypeInfoLight];
+//    [infoButton addTarget:self action:@selector(showControls) forControlEvents:UIControlEventTouchUpInside];
+
+    UIBarButtonItem *controlsButton = [[[UIBarButtonItem alloc]
+                                   initWithTitle:@"Controls"
+                                   style:UIBarButtonItemStylePlain
+                                   target:self
+                                   action:@selector(showControls)] autorelease];
+
+    
+    self.viewController.navigationItem.rightBarButtonItem = controlsButton;
+    
+    [_window.rootViewController pushViewController:self.viewController animated:NO];
+	
+    [_window makeKeyAndVisible];
 	return YES;
+}
+
+- (void) showControls {
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Storyboard" bundle:nil];
+    UIViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"ControlsViewController"];
+    
+    [_window.rootViewController pushViewController:vc animated:YES];
 }
 
 - (void)dealloc

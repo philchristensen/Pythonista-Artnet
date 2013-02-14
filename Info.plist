@@ -37,6 +37,8 @@
 	</array>
 	<key>UIApplicationExitsOnSuspend</key>
 	<false/>
+	<key>UIMainStoryboardFile~ipad</key>
+	<string>Storyboard</string>
 	<key>UIPrerenderedIcon</key>
 	<true/>
 	<key>UIStatusBarHidden</key>

@@ -6,11 +6,12 @@
 //  Copyright __MyCompanyName__ 2012. All rights reserved.
 //
 
+#import "AppDelegate.h"
+
 #import <UIKit/UIKit.h>
 
 int main(int argc, char *argv[]) { 
-	NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
-	int retVal = UIApplicationMain(argc, argv, nil, @"AppDelegate");
-	[pool release];
-	return retVal;
+    @autoreleasepool {
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
+    }
 }
